@@ -1,0 +1,27 @@
+<h2>Vehicle View</h2>   
+<table border="2">   
+      <thead>   
+      <tr>   
+        <th>Name</th>   
+        <th>Price</th>   
+        <th>picture</th>   
+        <th>created</th>   
+          <th>updated</th>   
+      </tr>   
+      </thead>   
+      <tbody>   
+      <% @vehicles.each do |vehicle| %>   
+          <tr>   
+            <td><%= vehicle.name %></td>   
+            <td><%= vehicle.price %></td>   
+          
+            <td><%= vehicle.picture %></td>   
+            <td><%= vehicle.created_at %></td>   
+            <td><%= vehicle.updated_at %></td>   
+
+                
+            </td>   
+          </tr>   
+      <% end %>   
+      </tbody>   
+    </table>   

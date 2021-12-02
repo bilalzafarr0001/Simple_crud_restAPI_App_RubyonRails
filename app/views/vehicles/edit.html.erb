@@ -1,0 +1,31 @@
+<h1>Vehicles#edit</h1>
+<div class="container">   
+  
+<%= form_for @vehicle, url: {action: :update} do |f| %>   
+     
+   <h3>Add a Vehicle</h3>   
+ <%= "<div>#{@vehicle.errors.full_messages.first}</div>".html_safe if @vehicle.errors.any? %>   
+    <p>   
+  
+     <div>   
+            <label>Vehicle Name</label>   
+            <%= f.text_field :name %>   
+     </div>   
+  
+     <div>   
+            <label>Price</label>   
+            <%= f.text_field :price %>   
+     </div>   
+        
+     <div>   
+            <label>Image URL</label>   
+            <%= f.text_field :picture %>   
+     </div>   
+  
+      </p>   
+   <div>   
+      <%= link_to 'Back', { controller: 'vehicles', action: 'index'} %>   
+      <%= f.submit 'Update Vehicle' %>   
+    </div>   
+<% end %>   
+t;/div>  

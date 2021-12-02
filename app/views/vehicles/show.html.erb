@@ -1,0 +1,23 @@
+<h1>Vehicles#show</h1>
+ <div class="container">        
+        
+       
+            <div>   
+              <label>Vehicle Name</label>   
+              <%= @vehicle.name %>   
+            </div>   
+  
+            <div>   
+              <label>Price</label>   
+              <h4><%= @vehicle.price %>  </h4> 
+            </div>   
+            
+            <div>   
+              <label>Picture</label>   
+              <img class="mycarShow" src=<%= @vehicle.picture %> />  
+            </div>   
+         
+      <div>   
+        <%= link_to 'Back', { controller: 'vehicles', action: 'index'} %>   
+      </div>   
+</div>  
